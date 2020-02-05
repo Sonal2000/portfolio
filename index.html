@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MY PROFILE</title>
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
@@ -159,12 +159,16 @@ i{
     border: 2px solid black;
     box-shadow: 5px 20px 15px 0px rgba(0, 0, 0, 0.18);
     background-color:  rgb(122, 122, 122);
+    filter:grayscale(100%);
     transition: 1S;
 
 }
 
 .pro img:hover{
     transform: scale(1.3);
+    border: 2px solid greenyellow;
+    filter: grayscale(0%);
+
 }
 h1,h3{
 color: whitesmoke;
@@ -185,29 +189,35 @@ background: transparent;
 outline: none;
 color: whitesmoke;
 }
+textarea{
+font-size: 20px;
+text-align: center;
+padding: 10px;
+margin: 5px;
+text-align: center;
+border:none;
+border-bottom:2px solid yellowgreen; 
+background: transparent;
+outline: none;
+color: whitesmoke;
+}
 input:focus {
   border:2px solid yellowgreen; 
   background-color: yellowgreen;
   color: #191919;
   
 }
-
+textarea:focus{
+  border:2px solid yellowgreen; 
+  background-color: yellowgreen;
+  color: #191919;
+}
 
 .con{
 text-align: center;
 
 }
-textarea{
-  border:none;
-border-bottom:2px solid yellowgreen; 
-  outline: none;
-  margin: 5px;
-  border-radius:50px;
-text-align: center;
-border:1px solid yellowgreen;
-outline: none;
-background: transparent;
-}
+
 button{
   margin: 5px;
   padding: 2px;
@@ -311,14 +321,13 @@ transition: 1s;
     color: whitesmoke;
   }
   .im{
-    width:100%;
+    width:50%;
     
   }
     .profile
     {
-        widows:50%;
+        widows:40%;
         overflow: inherit;
-        
         display: block;
     }
     .social{
@@ -356,6 +365,7 @@ transition: 1s;
     box-shadow: 5px 20px 15px 0px rgba(0, 0, 0, 0.18);
     background-color:  rgb(122, 122, 122);
     transition: 1S;
+    filter: grayscale(60%);
 
 }
 }
@@ -385,9 +395,9 @@ svg circle{
       asperiores tempora ea distinctio ab cumque dolores consequatur quasi possimus. Ab!</p>
       <h3 >FOLLOW ME ON</h3>
         <div class="social" data-aos="fade-right">
-           <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-           <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-           <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.facebook.com/shubham.prakash.7503" class="facebook"><i class="fab fa-facebook"></i></a>
+           <a href="https://www.instagram.com/xm_shubham/"><i class="fab fa-instagram"></i></a>
+           <a href="https://wa.me/08658034359" class="twitter"><i class="fab fa-whatsapp"></i></a>
            
         </div>
   
@@ -449,16 +459,17 @@ svg circle{
               <div class="con">
               <h2>CONTACT ME</h2>
           
-                <form action="">
-                  <input type="text" placeholder="NAME">
+                <form action="action.php" method="get">
+                  <input type="text" placeholder="NAME" required>
                   <br>
-                  <input type="email" placeholder="EMAIL ID">
+                  <input type="email" placeholder="EMAIL ID" required>
                   <br>
-                  <input type="tel" placeholder="MOBILE NUMBER">
+                  <input type="tel" placeholder="MOBILE NUMBER" required>
                   <br>
-                  <input type="text" placeholder="MESSAGE">
+                  <textarea name="" placeholder="YOUR MESSAGE" id="" cols="25" rows="3" ></textarea>
+                  
                   <br>
-<button>SEND<i class="fas fa-paper-plane"></i></button>
+<button type="submit" value="Submit">SUBMIT<i class="fas fa-paper-plane"></i></button>
               </form>
                 
               </div>
